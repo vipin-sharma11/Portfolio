@@ -302,7 +302,7 @@ const Projects = () => {
                                 <div className="group relative rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-slate-50 p-2 transition-all hover:shadow-lg hover:border-primary-accent/50">
                                     <div className="aspect-[4/3] bg-white relative overflow-hidden rounded-lg">
                                         <img
-                                            src="/assets/diagrams/UC1.png"
+                                            src="./assets/diagrams/UC1.png"
                                             alt="Use Case Diagram 1"
                                             className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
                                         />
@@ -314,7 +314,7 @@ const Projects = () => {
                                 <div className="group relative rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-slate-50 p-2 transition-all hover:shadow-lg hover:border-primary-accent/50">
                                     <div className="aspect-[4/3] bg-white relative overflow-hidden rounded-lg">
                                         <img
-                                            src="/assets/diagrams/UC2.png"
+                                            src="./assets/diagrams/UC2.png"
                                             alt="Use Case Diagram 2"
                                             className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
                                         />
@@ -336,7 +336,7 @@ const Projects = () => {
                             <div className="max-w-4xl mx-auto group relative rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-slate-50 p-2 transition-all hover:shadow-lg hover:border-primary-accent/50">
                                 <div className="aspect-auto bg-white relative overflow-hidden rounded-lg flex justify-center bg-slate-100/50">
                                     <img
-                                        src="/assets/diagrams/activity_diagram.png"
+                                        src="./assets/diagrams/activity_diagram.png"
                                         alt="Activity Diagram"
                                         className="h-[60vh] w-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
                                     />
@@ -353,7 +353,7 @@ const Projects = () => {
                             <div className="max-w-4xl mx-auto group relative rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-slate-50 p-2 transition-all hover:shadow-lg hover:border-primary-accent/50">
                                 <div className="aspect-auto bg-white relative overflow-hidden rounded-lg flex justify-center bg-slate-100/50">
                                     <img
-                                        src="/assets/diagrams/sequence_diagram.png"
+                                        src="./assets/diagrams/sequence_diagram.png"
                                         alt="Sequence Diagram"
                                         className="h-[60vh] w-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
                                     />
@@ -380,7 +380,7 @@ const Projects = () => {
                                         <div className="aspect-video bg-slate-100 relative">
                                             {/* Using standard img tag since we moved assets to public folder */}
                                             <img
-                                                src={`/assets/project/${num}.jpeg`}
+                                                src={`./assets/project/${num}.jpeg`}
                                                 alt={`Project Screenshot ${index + 1}`}
                                                 className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                                                 loading="lazy"
@@ -414,7 +414,7 @@ const Projects = () => {
                                 <div className="group relative rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-slate-50 p-2">
                                     <div className="aspect-[4/3] bg-white relative overflow-hidden rounded-lg">
                                         <img
-                                            src="/assets/certificates/certificate1.png"
+                                            src="./assets/certificates/certificate1.png"
                                             alt="DevOps Certificate 1"
                                             className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
                                         />
@@ -426,7 +426,7 @@ const Projects = () => {
                                 <div className="group relative rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-slate-50 p-2">
                                     <div className="aspect-[4/3] bg-white relative overflow-hidden rounded-lg">
                                         <img
-                                            src="/assets/certificates/certificate2.png"
+                                            src="./assets/certificates/certificate2.png"
                                             alt="DevOps Certificate 2"
                                             className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
                                         />

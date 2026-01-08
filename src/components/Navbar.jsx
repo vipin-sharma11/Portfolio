@@ -18,7 +18,7 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-20 items-center">
                     <div className="flex-shrink-0 flex items-center gap-3">
-                        <img src="/assets/logo.jpeg" alt="Logo" className="h-10 w-auto rounded-md object-cover border border-slate-200" />
+                        <img src="./assets/logo.jpeg" alt="Logo" className="h-10 w-auto rounded-md object-cover border border-slate-200" />
                         <Link to="/" className="font-bold text-2xl tracking-tight text-slate-900">
                             Vipin Sharma<span className="text-primary-accent">.</span>
                         </Link>
