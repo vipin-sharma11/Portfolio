@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Skills from './components/Skills'
@@ -35,7 +35,7 @@ function App() {
                         <Route path="/assignments" element={<Assignments />} />
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/skills" element={<div className="pt-20 px-4 max-w-4xl mx-auto"><Skills /></div>} />
-                        <Route path="*" element={<div className="pt-32 text-center text-xl text-gray-600">Page Under Construction</div>} />
+                        <Route path="*" element={<Navigate to="/" replace />} />
                     </Routes>
                 </main>
                 <Footer />
