@@ -16,60 +16,19 @@ const Contact = () => {
                 </div>
 
                 <div className="bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden animate-slideUp">
-                    <div className="p-8 md:p-12">
-                        <div className="grid gap-8">
-
-                            {/* Name */}
-                            <div className="flex items-start space-x-5 p-4 rounded-xl hover:bg-slate-50 transition-colors duration-200">
-                                <div className="p-3 bg-primary-accent/10 rounded-full text-primary-accent">
-                                    <User className="w-6 h-6" />
-                                </div>
-                                <div>
-                                    <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-1">Name</h3>
-                                    <p className="text-xl text-slate-800 font-medium">Vipin Sharma</p>
-                                </div>
-                            </div>
-
-                            {/* USN */}
-                            <div className="flex items-start space-x-5 p-4 rounded-xl hover:bg-slate-50 transition-colors duration-200">
-                                <div className="p-3 bg-blue-100 rounded-full text-blue-600">
-                                    <Hash className="w-6 h-6" />
-                                </div>
-                                <div>
-                                    <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-1">USN</h3>
-                                    <p className="text-xl text-slate-800 font-medium font-mono">01fe34bcs253</p>
-                                </div>
-                            </div>
-
-                            {/* Email */}
-                            <div className="flex items-start space-x-5 p-4 rounded-xl hover:bg-slate-50 transition-colors duration-200">
-                                <div className="p-3 bg-indigo-100 rounded-full text-indigo-600">
-                                    <Mail className="w-6 h-6" />
-                                </div>
-                                <div>
-                                    <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-1">Email Address</h3>
-                                    <a href="mailto:01fe23bcs253@kletech.ac.in" className="text-xl text-slate-800 font-medium hover:text-primary-accent transition-colors">
-                                        01fe23bcs253@kletech.ac.in
-                                    </a>
-                                </div>
-                            </div>
-
-                            {/* Location (Optional Placeholder) */}
-                            <div className="flex items-start space-x-5 p-4 rounded-xl hover:bg-slate-50 transition-colors duration-200">
-                                <div className="p-3 bg-rose-100 rounded-full text-rose-600">
-                                    <MapPin className="w-6 h-6" />
-                                </div>
-                                <div>
-                                    <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-1">Location</h3>
-                                    <p className="text-xl text-slate-800 font-medium">Hubballi, Karnataka, India</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    {/* Bottom Decorative Bar */}
-                    <div className="h-2 bg-gradient-to-r from-slate-200 via-primary-accent to-slate-200"></div>
+                    {/* 
+                        TODO: REPLACE THE SRC URL BELOW WITH YOUR ACTUAL GOOGLE FORM EMBED LINK 
+                        1. Go to your Google Form -> Send -> <> (Embed HTML)
+                        2. Copy the URL from the 'src' attribute
+                        3. Paste it below
+                    */}
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSfq5PZ3kD5FiIEsVTozOFgNjsN-KtjBasfZaYKe78DpPityNA/viewform?embedded=true"
+                        className="w-full h-[1200px] md:h-[1500px] border-none"
+                        title="Contact Form"
+                    >
+                        Loading…
+                    </iframe>
                 </div>
             </div>
         </div>

@@ -1,5 +1,15 @@
 import React, { useState } from 'react';
 import { Code, Layout, Server, Database, FileCode } from 'lucide-react';
+import assign1_1 from '../../P/Assignment1-1.jpeg';
+import assign1_2 from '../../P/Assignment1-2.jpeg.png';
+import assign2_1 from '../../P/Assignment2-1.png';
+import assign2_2 from '../../P/Assignment2-2.png';
+import assign3_1 from '../../P/Assignment3-1.png';
+import assign3_2 from '../../P/Assignment3-2.png';
+import assign4_1 from '../../P/Assignment4-1.png';
+import assign4_2 from '../../P/Assignment4-2.png';
+import assign5_1 from '../../P/Assignment5-1.png';
+import assign5_2 from '../../P/Assignment5-2.png';
 
 const Assignments = () => {
     const [activeTab, setActiveTab] = useState('html-css');
@@ -36,6 +46,22 @@ const Assignments = () => {
                                     View on GitHub
                                 </a>
                             </div>
+                            <div className="mt-6 flex flex-col gap-8">
+                                <div className="rounded-lg overflow-hidden border border-slate-200 shadow-sm group">
+                                    <img
+                                        src={assign1_1}
+                                        alt="Assignment 1 Preview 1"
+                                        className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-300"
+                                    />
+                                </div>
+                                <div className="rounded-lg overflow-hidden border border-slate-200 shadow-sm group">
+                                    <img
+                                        src={assign1_2}
+                                        alt="Assignment 1 Preview 2"
+                                        className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-300"
+                                    />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 );
@@ -60,6 +86,22 @@ const Assignments = () => {
                                     </svg>
                                     View on GitHub
                                 </a>
+                            </div>
+                            <div className="mt-6 flex flex-col gap-8">
+                                <div className="rounded-lg overflow-hidden border border-slate-200 shadow-sm group">
+                                    <img
+                                        src={assign2_1}
+                                        alt="Assignment 2 Preview 1"
+                                        className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-300"
+                                    />
+                                </div>
+                                <div className="rounded-lg overflow-hidden border border-slate-200 shadow-sm group">
+                                    <img
+                                        src={assign2_2}
+                                        alt="Assignment 2 Preview 2"
+                                        className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-300"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -86,6 +128,22 @@ const Assignments = () => {
                                     View on GitHub
                                 </a>
                             </div>
+                            <div className="mt-6 flex flex-col gap-8">
+                                <div className="rounded-lg overflow-hidden border border-slate-200 shadow-sm group">
+                                    <img
+                                        src={assign3_1}
+                                        alt="Assignment 3 Preview 1"
+                                        className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-300"
+                                    />
+                                </div>
+                                <div className="rounded-lg overflow-hidden border border-slate-200 shadow-sm group">
+                                    <img
+                                        src={assign3_2}
+                                        alt="Assignment 3 Preview 2"
+                                        className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-300"
+                                    />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 );
@@ -111,6 +169,22 @@ const Assignments = () => {
                                     View on GitHub
                                 </a>
                             </div>
+                            <div className="mt-6 flex flex-col gap-8">
+                                <div className="rounded-lg overflow-hidden border border-slate-200 shadow-sm group">
+                                    <img
+                                        src={assign4_1}
+                                        alt="Assignment 4 Preview 1"
+                                        className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-300"
+                                    />
+                                </div>
+                                <div className="rounded-lg overflow-hidden border border-slate-200 shadow-sm group">
+                                    <img
+                                        src={assign4_2}
+                                        alt="Assignment 4 Preview 2"
+                                        className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-300"
+                                    />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 );
@@ -135,6 +209,22 @@ const Assignments = () => {
                                     </svg>
                                     View on GitHub
                                 </a>
+                            </div>
+                            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div className="rounded-lg overflow-hidden border border-slate-200 shadow-sm group">
+                                    <img
+                                        src={assign5_1}
+                                        alt="Assignment 5 Preview 1"
+                                        className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-300"
+                                    />
+                                </div>
+                                <div className="rounded-lg overflow-hidden border border-slate-200 shadow-sm group">
+                                    <img
+                                        src={assign5_2}
+                                        alt="Assignment 5 Preview 2"
+                                        className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-300"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>

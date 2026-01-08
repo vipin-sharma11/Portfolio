@@ -9,10 +9,6 @@ const Projects = () => {
         { id: 'problem', label: 'Problem Analysis And Requirement', icon: Target },
         { id: 'design', label: 'System Design', icon: Server },
         { id: 'implementation', label: 'Implementation', icon: Code2 },
-        { id: 'details', label: 'Course Project Details', icon: Layout },
-        { id: 'problem', label: 'Problem Analysis And Requirement', icon: Target },
-        { id: 'design', label: 'System Design', icon: Server },
-        { id: 'implementation', label: 'Implementation', icon: Code2 },
         { id: 'devops', label: 'Devops Certification', icon: UserCheck },
         { id: 'reflection', label: 'Final Reflection', icon: BookOpen },
     ];
@@ -302,7 +298,7 @@ const Projects = () => {
                         {/* Use Case Diagram Placeholders */}
                         <div className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
                             <h3 className="text-xl font-bold text-slate-900 mb-6 border-b border-slate-100 pb-2">Use Case Diagram</h3>
-                            <div className="grid md:grid-cols-2 gap-8">
+                            <div className="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
                                 <div className="group relative rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-slate-50 p-2 transition-all hover:shadow-lg hover:border-primary-accent/50">
                                     <div className="aspect-[4/3] bg-white relative overflow-hidden rounded-lg">
                                         <img
@@ -337,12 +333,12 @@ const Projects = () => {
                         {/* Activity Diagram */}
                         <div className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
                             <h3 className="text-xl font-bold text-slate-900 mb-6 border-b border-slate-100 pb-2">ACTIVITY DIAGRAM</h3>
-                            <div className="group relative rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-slate-50 p-2 transition-all hover:shadow-lg hover:border-primary-accent/50">
-                                <div className="aspect-auto bg-white relative overflow-hidden rounded-lg">
+                            <div className="max-w-4xl mx-auto group relative rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-slate-50 p-2 transition-all hover:shadow-lg hover:border-primary-accent/50">
+                                <div className="aspect-auto bg-white relative overflow-hidden rounded-lg flex justify-center bg-slate-100/50">
                                     <img
                                         src="/assets/diagrams/activity_diagram.png"
                                         alt="Activity Diagram"
-                                        className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
+                                        className="h-[60vh] w-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
                                     />
                                 </div>
                                 <div className="p-3 text-center border-t border-slate-100 mt-2">
@@ -354,12 +350,12 @@ const Projects = () => {
                         {/* Sequence Diagram */}
                         <div className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
                             <h3 className="text-xl font-bold text-slate-900 mb-6 border-b border-slate-100 pb-2">SEQUENCE DIAGRAM</h3>
-                            <div className="group relative rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-slate-50 p-2 transition-all hover:shadow-lg hover:border-primary-accent/50">
-                                <div className="aspect-auto bg-white relative overflow-hidden rounded-lg">
+                            <div className="max-w-4xl mx-auto group relative rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-slate-50 p-2 transition-all hover:shadow-lg hover:border-primary-accent/50">
+                                <div className="aspect-auto bg-white relative overflow-hidden rounded-lg flex justify-center bg-slate-100/50">
                                     <img
                                         src="/assets/diagrams/sequence_diagram.png"
                                         alt="Sequence Diagram"
-                                        className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
+                                        className="h-[60vh] w-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
                                     />
                                 </div>
                                 <div className="p-3 text-center border-t border-slate-100 mt-2">
@@ -379,13 +375,13 @@ const Projects = () => {
                             </p>
 
                             <div className="grid grid-cols-1 gap-8">
-                                {[2, 3, 4, 5, 6].map((num) => (
+                                {[2, 3, 4, 5, 6].map((num, index) => (
                                     <div key={num} className="group relative overflow-hidden rounded-xl border border-slate-200 shadow-sm transition-all hover:shadow-lg hover:border-primary-accent/50 cursor-pointer">
                                         <div className="aspect-video bg-slate-100 relative">
                                             {/* Using standard img tag since we moved assets to public folder */}
                                             <img
                                                 src={`/assets/project/${num}.jpeg`}
-                                                alt={`Project Screenshot ${num}`}
+                                                alt={`Project Screenshot ${index + 1}`}
                                                 className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                                                 loading="lazy"
                                                 onError={(e) => {
@@ -396,7 +392,7 @@ const Projects = () => {
                                             <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/10 transition-colors duration-300" />
                                         </div>
                                         <div className="p-4 bg-white">
-                                            <span className="text-sm font-medium text-slate-500 group-hover:text-primary-accent transition-colors">Screenshot {num}</span>
+                                            <span className="text-sm font-medium text-slate-500 group-hover:text-primary-accent transition-colors">Screenshot {index + 1}</span>
                                         </div>
                                     </div>
                                 ))}
@@ -414,7 +410,7 @@ const Projects = () => {
                                 Certifications earned during the course of the project, demonstrating proficiency in DevOps practices and tools.
                             </p>
 
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div className="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
                                 <div className="group relative rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-slate-50 p-2">
                                     <div className="aspect-[4/3] bg-white relative overflow-hidden rounded-lg">
                                         <img
